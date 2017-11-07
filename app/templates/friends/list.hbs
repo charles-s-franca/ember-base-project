@@ -1,0 +1,8 @@
+<h2>List of friends</h2>
+
+<ul>
+  {{#each model as |friend|}}
+    <li>{{friend.name}} {{friend.lastname}} - {{model.friendsSince}}</li>
+  {{/each}}
+</ul>
+{{outlet}}

@@ -1,0 +1,7 @@
+<form>
+  {{ input value=model.name }}
+  {{ input value=model.lastname }}
+  {{bootstrap-datepicker value=model.friendSince format="dd/mm/yyyy"}}
+  <button {{ action "save" model }}>Gravar</button>
+</form>
+{{outlet}}
